@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Task;
-use App\TaskList;
+use App\Models\Task;
+use App\Models\TaskList;
 
 class TaskController extends Controller
 {
@@ -13,7 +13,7 @@ class TaskController extends Controller
         TaskList::updateOrCreate([
             'id' => $taskListId,
         ]);
-        for ($x = 20; $x >= 1; $x--) {
+        for ($x = 1; $x <= 20; $x++) {
             Task::updateOrCreate([
                 'order' => $x,
                 'task_lists_id' => $taskListId,

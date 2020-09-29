@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Models\TaskList;
 use Gurgentil\LaravelEloquentSequencer\Traits\Sequenceable;
 use Illuminate\Database\Eloquent\Model;
-use App\TaskList;
 
 class Task extends Model
 {
