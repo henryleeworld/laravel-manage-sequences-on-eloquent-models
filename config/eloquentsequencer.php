@@ -4,7 +4,7 @@ return [
     /*
      * The name of the table column that determines the sequence value.
      */
-    'column_name' => 'order',
+    'column_name' => 'order', //'position'
 
     /*
      * The value sequences should start at.

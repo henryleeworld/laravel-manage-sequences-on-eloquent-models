@@ -1,4 +1,4 @@
-# Laravel 8 管理 Eloquent 模型的順序
+# Laravel 10 管理 Eloquent 模型的順序
 
 引入 gurgentil 的 laravel-eloquent-sequencer 套件來擴增允許建立和管理 Eloquent 模型的順序。
 
