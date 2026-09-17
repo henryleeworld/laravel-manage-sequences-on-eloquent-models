@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Models\TaskList;
 use Gurgentil\LaravelEloquentSequencer\Traits\Sequenceable;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Task extends Model
 {
@@ -13,7 +14,7 @@ class Task extends Model
     /**
      * The attributes that are mass assignable.
      *
-     * @var array
+     * @var list<string>
      */
     protected $fillable = ['order', 'task_lists_id'];
     
@@ -21,7 +22,10 @@ class Task extends Model
         'task_lists_id',
     ];
 
-    public function taskListsId()
+    /**
+     * Get the task lists id that owns the task.
+     */
+    public function taskListsId(): BelongsTo
     {
         return $this->belongsTo(TaskList::class);
     }
