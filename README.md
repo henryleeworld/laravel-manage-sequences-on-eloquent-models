@@ -1,4 +1,4 @@
-# Laravel 11 管理 Eloquent 模型的順序
+# Laravel 12 管理 Eloquent 模型的順序
 
 引入 gurgentil 的 laravel-eloquent-sequencer 套件來擴增允許建立和管理 Eloquent 模型的順序。
 
@@ -26,5 +26,5 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/fkCY3FK.png)
+![](https://i.imgur.com/i1RLrih.png)
 > 範圍查詢依據順序對結果進行排序
